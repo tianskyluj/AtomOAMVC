@@ -13,20 +13,16 @@ namespace AtomOA.Controllers
     {
         //
         // GET: /User/
-        private ISystemUserService systemUserService;
 
-        public ISystemUserService SystemUserService
-        {
-            get { return this.systemUserService; }
-            set { this.systemUserService = value; }
-        }
+
+        public ISystemUserService SystemUserService{get;set;}
 
         public ActionResult Index()
         {
-            var webApplicationContext =
-                           ContextRegistry.GetContext() as WebApplicationContext;
-            SystemUserService =
-                webApplicationContext.GetObject("systemUserService") as ISystemUserService;//从spring配置中获取Userservice
+            //var webApplicationContext =
+            //               ContextRegistry.GetContext() as WebApplicationContext;
+            //SystemUserService =
+            //    webApplicationContext.GetObject("systemUserService") as ISystemUserService;//从spring配置中获取Userservice
             IList<AtomOA.Model.SystemUser> users = SystemUserService.GetAllList();
             ViewData["Users"] = users;
             return View("ShowAllUsers");
