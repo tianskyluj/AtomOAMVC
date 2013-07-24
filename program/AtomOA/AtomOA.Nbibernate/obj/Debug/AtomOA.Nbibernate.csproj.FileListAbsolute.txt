@@ -23,3 +23,28 @@ c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Nbibe
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.Model.pdb
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Nbibernate\obj\Debug\AtomOA.Nbibernate.dll
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Nbibernate\obj\Debug\AtomOA.Nbibernate.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.Nbibernate.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.Nbibernate.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\antlr.runtime.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.IDao.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.Model.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Castle.DynamicProxy.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Common.Logging.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Common.Logging.Log4Net.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Iesi.Collections.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\log4net.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\NHibernate.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\NHibernate.JetDriver.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Aop.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Core.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Data.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Data.NHibernate12.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Services.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Web.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\Spring.Web.Extensions.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\SpringHiberate.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.IDao.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\bin\Debug\AtomOA.Model.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\obj\Debug\AtomOA.Nbibernate.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Nbibernate\obj\Debug\AtomOA.Nbibernate.pdb

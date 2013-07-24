@@ -1,0 +1,8 @@
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\AtomOA.Common.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\AtomOA.Common.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\obj\Debug\AtomOA.Common.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\obj\Debug\AtomOA.Common.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\COM.Excel.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\Excel.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\OpenSmtp.dll

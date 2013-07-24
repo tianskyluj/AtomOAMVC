@@ -12,3 +12,22 @@ c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\A
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Model.pdb
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Nbibernate.pdb
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.IDao.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.BLL.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.IBLL.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Model.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Nbibernate.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.IDao.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.BLL.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.IBLL.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Model.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Nbibernate.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.IDao.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\obj\Debug\AtomOA.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\obj\Debug\AtomOA.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Common.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\AtomOA.Common.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\Excel.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\COM.Excel.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA\bin\OpenSmtp.dll

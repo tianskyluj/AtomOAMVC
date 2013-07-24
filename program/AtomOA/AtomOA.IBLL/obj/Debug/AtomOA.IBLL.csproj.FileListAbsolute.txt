@@ -5,3 +5,10 @@ c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\ResolveAssemblyReference.cache
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.dll
 c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.pdb
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.pdb
