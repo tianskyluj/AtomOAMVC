@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\obj\Debug\AtomOA.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\obj\Debug\AtomOA.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.BLL.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.IBLL.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Model.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Nbibernate.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.IDao.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.BLL.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.IBLL.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Model.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.Nbibernate.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA\bin\AtomOA.IDao.pdb

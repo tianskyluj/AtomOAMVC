@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.pdb

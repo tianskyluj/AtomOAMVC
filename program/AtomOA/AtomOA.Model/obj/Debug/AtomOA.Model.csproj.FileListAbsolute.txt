@@ -1,0 +1,5 @@
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Model\bin\Debug\AtomOA.Model.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Model\bin\Debug\AtomOA.Model.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Model\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.dll
+c:\users\administrator\documents\visual studio 2010\Projects\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.pdb
