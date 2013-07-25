@@ -62,7 +62,7 @@
     <div class="container">
         <form class="form-login" id="formLogin" runat="server">
         <h2 class="form-heading">
-            <span id="title_login"></span></h2>
+            <span id="title_login"><%: ViewData["CompanyName"] %></span></h2>
         <input type="text" id="userName" runat="server" class="input-block-level" placeholder="用户名"/>
         <input type="password" id="passWord" runat="server" class="input-block-level" placeholder="密码"/>
         <div class="row-fluid">

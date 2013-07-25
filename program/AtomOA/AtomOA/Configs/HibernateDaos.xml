@@ -3,4 +3,7 @@
   <object id="SystemUserDao" type="AtomOA.Nbibernate.SystemUserNhibernate,AtomOA.Nbibernate">
     <property name="SessionFactory" ref="SessionFactory" />
   </object>
+  <object id="GlobalSettingDao" type="AtomOA.Nbibernate.GlobalSettingNhibernate,AtomOA.Nbibernate">
+    <property name="SessionFactory" ref="SessionFactory" />
+  </object>
 </objects>

@@ -8,3 +8,8 @@ D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Model\bin\Debug\AtomOA.Mo
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Model\obj\Debug\ResolveAssemblyReference.cache
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.dll
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.pdb
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.Model\bin\Debug\AtomOA.Model.dll
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.Model\bin\Debug\AtomOA.Model.pdb
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.Model\obj\Debug\ResolveAssemblyReference.cache
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.dll
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.Model\obj\Debug\AtomOA.Model.pdb

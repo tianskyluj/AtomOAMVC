@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AtomOA.Model.GlobalSetting,AtomOA.Model" table="GlobalSetting" lazy="false">
+    <id name="Id" column="Id" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="CompanyName" column="CompanyName" type="String" length="20" />
+    
+    <property name="state" column="state" type="Int32" />
+    <property name="remark" column="remark" type="String" length="20" />
+    <property name="createUser" column="createUser" type="Int32" length="20" />
+    <property name="createIp" column="createIp" type="String" length="20" />
+    <property name="createTime" column="createTime" type="DateTime" />
+    <property name="updateUser" column="updateUser" type="Int32" length="20" />
+    <property name="updateIp" column="updateIp" type="String" length="20" />
+    <property name="updateTime" column="updateTime" type="DateTime" />
+  </class>
+</hibernate-mapping>

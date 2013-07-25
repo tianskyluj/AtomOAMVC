@@ -3,4 +3,7 @@
   <object id="SystemUserService" type="AtomOA.BLL.SystemUserServiceImpl,AtomOA.BLL">
     <property name="SystemUserDao" ref="SystemUserDao" />
   </object>
+  <object id="GlobalSettingService" type="AtomOA.BLL.GlobalSettingServiceImpl,AtomOA.BLL">
+    <property name="GlobalSettingDao" ref="GlobalSettingDao" />
+  </object>
 </objects>

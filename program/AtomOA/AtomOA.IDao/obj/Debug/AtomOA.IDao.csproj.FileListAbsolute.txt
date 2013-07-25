@@ -12,3 +12,10 @@ D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IDao\bin\Debug\AtomOA.Mod
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IDao\obj\Debug\ResolveAssemblyReference.cache
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IDao\obj\Debug\AtomOA.IDao.dll
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.IDao\obj\Debug\AtomOA.IDao.pdb
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\bin\Debug\AtomOA.IDao.dll
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\bin\Debug\AtomOA.IDao.pdb
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\bin\Debug\AtomOA.Model.dll
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\bin\Debug\AtomOA.Model.pdb
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\obj\Debug\ResolveAssemblyReference.cache
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\obj\Debug\AtomOA.IDao.dll
+K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IDao\obj\Debug\AtomOA.IDao.pdb

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Spring.Context.Support;
 using AtomOA.IBLL;
 
 namespace AtomOA.Controllers
@@ -10,16 +11,13 @@ namespace AtomOA.Controllers
     [HandleError]
     public class HomeController : Controller
     {
-        //
-        // 获取用户服务
-        private ISystemUserService systemUserService;
+        public ISystemUserService SystemUserService { get; set; }
+        public IGlobalSettingService GlobalSettingService { get; set; }
 
-        public ISystemUserService SystemUserService
-        {
-            get { return this.systemUserService; }
-            set { this.systemUserService = value; }
-        }
-
+        /// <summary>
+        /// 首页
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             ViewData["name"] = "唐富伟";
@@ -27,8 +25,17 @@ namespace AtomOA.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 登录页面
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Login()
         {
+            var webApplicationContext =
+                           ContextRegistry.GetContext() as WebApplicationContext;
+            GlobalSettingService =
+                webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
+            ViewData["CompanyName"] = GlobalSettingService.GetAllList()[0].CompanyName;
             return View();
         }
 
