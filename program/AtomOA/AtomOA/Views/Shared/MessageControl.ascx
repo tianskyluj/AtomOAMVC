@@ -15,13 +15,13 @@
 </aside>
 
 <!-- 成功提示 -->
-<aside id="success" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<aside id="success" class="modal hide fade success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-header">
 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 <h3 id="H1">操作成功</h3>
 </div>
 <div class="modal-body">
-<span id="successMessage"></span>
+<span id="successMessage" class="successMessage"></span>
 </div>
 <div class="modal-footer">
 <button class="btn btn-primary" data-dismiss="modal">确定</button>
@@ -29,9 +29,9 @@
 </aside>
 
 <!-- 错误提示 -->
-<aside id="error" class="modal top hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<aside id="error" class="modal top hide fade error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-body">
-<p><span id="errorMessage"></span></p>
+<p><span id="errorMessage" class="errorMessage"></span></p>
 </div>
 <div class="modal-footer">
 <button class="btn btn-danger btn-large" data-dismiss="modal">Close</button>
@@ -41,13 +41,13 @@
 <script type="text/javascript">
     function showSuccess(msg) {
 
-        $("#successMessage").html(msg);
-        $("#success").modal("show");
+        $(".successMessage").html(msg);
+        $(".success").modal("show");
     }
 
     //  操作失败提示
     function showError(msg) {
-        $("#errorMessage").html(msg);
-        $("#error").modal("show");
+        $(".errorMessage").html(msg);
+        $(".error").modal("show");
     }
 </script>

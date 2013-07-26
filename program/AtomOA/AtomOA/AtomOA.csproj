@@ -288,8 +288,12 @@
     <Content Include="assets\js\twitter-bootstrap\bootstrap.js" />
     <Content Include="assets\js\ui-elements.general.js" />
     <Content Include="assets\js\wysihtml5\dist\wysihtml5-0.3.0.min.js" />
-    <Content Include="Configs\CommonDao.xml" />
-    <Content Include="Configs\Controls.xml" />
+    <Content Include="Configs\CommonDao.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configs\Controls.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Configs\HibernateDaos.xml" />
     <Content Include="Configs\Services.xml" />
     <Content Include="Configs\Webs.xml" />

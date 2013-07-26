@@ -5,13 +5,11 @@
 
         // 点击登录按钮
         this.login = function () {
-            $.ajax({
-                url: '/Home/DoLogin', 
-                data: ko.toJSON({ userName: this.userName(),passWord:this.passWord() }),
-                type: "post", contentType: "application/json",
-                success: function (result) { alert(result) },
-                error: function (error) { alert("调用出错" + error.responseText); }
-            });
+            $.post(
+                    '/Home/DoLogin',
+                    { "userName": this.userName(), "passWord": this.passWord() },
+                    function (result) { alert(result) }
+            );
         };
     }
 

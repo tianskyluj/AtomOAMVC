@@ -44,10 +44,10 @@ namespace AtomOA.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult DoLogin(string userName,string passWord)
+        public ActionResult DoLogin(AtomOA.Model.SystemUser userModel)
         {
-           
-           return Content(userName+passWord);
+
+            return Content(userModel.UserName+userModel.PassWord);
         }
 
         public ActionResult About()
