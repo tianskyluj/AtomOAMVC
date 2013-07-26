@@ -7,7 +7,7 @@
   <!-- Database and NHibernate Configuration这下面是配置使用Nhibernate -->
   <db:provider id="DbProvider"
                      provider="SqlServer-2.0"
-                     connectionString="database=AtomOA;integrated security=true; server=.;"/>
+                     connectionString="database=AtomOA;integrated security=true; server=.\sql2005;"/>
   <object id="SessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate12">
     <property name="DbProvider" ref="DbProvider" />
     <property name="MappingAssemblies">

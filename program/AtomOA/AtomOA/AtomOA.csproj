@@ -279,6 +279,7 @@
     <Content Include="assets\js\jqvmap\jqvmap\maps\jquery.vmap.world.js" />
     <Content Include="assets\js\justGage\resources\js\justgage.1.0.1.min.js" />
     <Content Include="assets\js\justGage\resources\js\raphael.2.1.0.min.js" />
+    <Content Include="assets\js\knockout-2.3.0.js" />
     <Content Include="assets\js\login.js" />
     <Content Include="assets\js\maps.google.js" />
     <Content Include="assets\js\maps.vector.js" />
@@ -296,6 +297,7 @@
     <Content Include="Upload\Avatar\1_avatar.txt" />
     <Content Include="Upload\Avatar\DefaultAvatar.jpg" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Scripts\Home\Login.js" />
     <Content Include="Views\Home\Login.aspx" />
     <Content Include="Views\Shared\FooterControl.ascx" />
     <Content Include="Views\Shared\HeadControl.ascx" />
@@ -304,7 +306,9 @@
     <Content Include="Views\Shared\MessageControl.ascx" />
     <Content Include="Views\Shared\SidebarControl.ascx" />
     <Content Include="Views\User\ShowAllUsers.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

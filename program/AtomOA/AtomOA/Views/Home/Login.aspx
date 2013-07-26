@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta charset="utf-8">
-    <title id="title" runat="server"></title>
+    <title id="title" runat="server"><%:ViewData["CompanyName"]%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -63,20 +63,20 @@
         <form class="form-login" id="formLogin" runat="server">
         <h2 class="form-heading">
             <span id="title_login"><%: ViewData["CompanyName"] %></span></h2>
-        <input type="text" id="userName" runat="server" class="input-block-level" placeholder="用户名"/>
-        <input type="password" id="passWord" runat="server" class="input-block-level" placeholder="密码"/>
+        <input type="text" id="userName" runat="server" class="input-block-level" data-bind="value:userName" placeholder="用户名"/>
+        <input type="password" id="passWord" runat="server" class="input-block-level" data-bind="value:passWord" placeholder="密码"/>
         <div class="row-fluid">
             <label class="checkbox span6">
                 <input type="checkbox" value="remember-me"/>记住密码
             </label>
-            <button id="login"  class="btn btn-primary pull-right span6">登录</button>
+            <button id="login"  class="btn btn-primary pull-right span6" data-bind="click:login">登录</button>
         </div>
         </form>
         <div class="form-footer-copyright">
             2013 © <small>原子科技</small>
         </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
     <script>        window.jQuery || document.write('<script src="../assets/js/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="../../assets/js/jquery-ui/js/jquery-ui-1.10.1.custom.min.js"></script>
     <script src="../../assets/js/twitter-bootstrap/bootstrap.js"></script>
@@ -86,7 +86,8 @@
     <![endif]-->
     <script src="../../assets/js/extents.js"></script>
     <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/knockout-2.3.0.js"></script>
+    <script src="../../Scripts/Home/Login.js"></script>
     <script>
       /*<![CDATA[*/
       var _gauges = _gauges || [];

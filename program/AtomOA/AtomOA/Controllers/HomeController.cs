@@ -26,7 +26,7 @@ namespace AtomOA.Controllers
         }
 
         /// <summary>
-        /// 登录页面
+        /// 显示登录页面
         /// </summary>
         /// <returns></returns>
         public ActionResult Login()
@@ -37,6 +37,17 @@ namespace AtomOA.Controllers
                 webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
             ViewData["CompanyName"] = GlobalSettingService.GetAllList()[0].CompanyName;
             return View();
+        }
+
+        /// <summary>
+        /// 点击登录操作
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult DoLogin(string userName,string passWord)
+        {
+           
+           return Content(userName+passWord);
         }
 
         public ActionResult About()

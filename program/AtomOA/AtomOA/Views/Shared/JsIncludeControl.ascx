@@ -1,9 +1,9 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>        window.jQuery || document.write('<script src="../assets/js/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="../assets/js/jquery-ui/js/jquery-ui-1.10.1.custom.min.js"></script>
-    <script src="../assets/js/twitter-bootstrap/bootstrap.js"></script>
-    <script src="../assets/js/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../assets/js/jquery-ui/js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="../../assets/js/twitter-bootstrap/bootstrap.js"></script>
+    <script src="../../assets/js/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <!--[if lte IE 8]>
     <script src="/templates/social/assets/js/placeholders/placeholders.min.js"></script>
     <![endif]-->
