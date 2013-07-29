@@ -19,6 +19,16 @@ namespace AtomOA.Nbibernate
             return HibernateTemplate.LoadAll<AtomOA.Model.SystemUser>();
         }
 
+        public IList<AtomOA.Model.SystemUser> GetList(string queryString)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(" from SystemUser where 1=1 and ");
+            if(queryString.Trim() == string.Empty)
+                queryString = " 1=1 ";
+            sb.Append(queryString);
+            return HibernateTemplate.Find<AtomOA.Model.SystemUser>(sb.ToString());
+        }
+
         public AtomOA.Model.SystemUser GetModelById(int Id)
         {
             return (AtomOA.Model.SystemUser)HibernateTemplate.Execute(new HibernateDelegate<AtomOA.Model.SystemUser>(delegate(NHibernate.ISession session)

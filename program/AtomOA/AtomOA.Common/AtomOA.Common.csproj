@@ -81,7 +81,12 @@
     <Compile Include="TimeParser.cs" />
     <Compile Include="UrlOper.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AtomOA.Model\AtomOA.Model.csproj">
+      <Project>{2A2CAEDB-26E6-4EFC-B43D-E6A982A67A5D}</Project>
+      <Name>AtomOA.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

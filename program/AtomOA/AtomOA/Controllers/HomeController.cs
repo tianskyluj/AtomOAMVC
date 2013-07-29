@@ -20,7 +20,8 @@ namespace AtomOA.Controllers
         /// <returns></returns>
         public ActionResult Index()
         {
-            ViewData["name"] = "唐富伟";
+            ViewData["CompanyName"] = AtomOA.Common.DataSession.GetGlobalSession().CompanyName.ToString();
+            ViewData["name"] = AtomOA.Common.DataSession.GetUserSession().Name.ToString();
             
             return View();
         }
@@ -35,7 +36,8 @@ namespace AtomOA.Controllers
                            ContextRegistry.GetContext() as WebApplicationContext;
             GlobalSettingService =
                 webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
-            ViewData["CompanyName"] = GlobalSettingService.GetAllList()[0].CompanyName;
+            AtomOA.Common.DataSession.SetGlobaSession(GlobalSettingService.GetAllList()[0]);
+            ViewData["CompanyName"] = AtomOA.Common.DataSession.GetGlobalSession().CompanyName.ToString();
             return View();
         }
 
@@ -46,8 +48,14 @@ namespace AtomOA.Controllers
         [HttpPost]
         public ActionResult DoLogin(AtomOA.Model.SystemUser userModel)
         {
-
-            return Content(userModel.UserName+userModel.PassWord);
+            var webApplicationContext =
+                          ContextRegistry.GetContext() as WebApplicationContext;
+            SystemUserService =
+                webApplicationContext.GetObject("SystemUserService") as ISystemUserService;//从spring配置中获取Userservice
+            
+            bool echo = SystemUserService.CheckLogin(userModel);
+            
+            return Content(echo ? "1" : "0");
         }
 
         public ActionResult About()

@@ -294,7 +294,9 @@
     <Content Include="Configs\Controls.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Configs\HibernateDaos.xml" />
+    <Content Include="Configs\HibernateDaos.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Configs\Services.xml" />
     <Content Include="Configs\Webs.xml" />
     <Content Include="Global.asax" />

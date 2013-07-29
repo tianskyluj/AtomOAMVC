@@ -17,6 +17,12 @@ namespace AtomOA.IDao
         IList<AtomOA.Model.SystemUser> GetAllList();
 
         /// <summary>
+        /// 获取所有的用户
+        /// </summary>
+        /// <returns></returns>
+        IList<AtomOA.Model.SystemUser> GetList(string queryString);
+
+        /// <summary>
         /// 根据id来获取用户
         /// </summary>
         /// <param name="Id"></param>

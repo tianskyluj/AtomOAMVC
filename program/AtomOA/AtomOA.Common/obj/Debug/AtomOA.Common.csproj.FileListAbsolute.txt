@@ -6,3 +6,5 @@ D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\obj\Debug\AtomOA.C
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\COM.Excel.dll
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\Excel.dll
 D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\OpenSmtp.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\AtomOA.Model.dll
+D:\我的文档\GitHub\AtomOAMVC\program\AtomOA\AtomOA.Common\bin\Debug\AtomOA.Model.pdb

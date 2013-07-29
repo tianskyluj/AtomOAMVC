@@ -15,6 +15,13 @@ namespace AtomOA.IBLL
         IList<SystemUser> GetAllList();
 
         /// <summary>
+        /// 根据条件获取用户信息
+        /// </summary>
+        /// <param name="queryString"></param>
+        /// <returns></returns>
+        IList<SystemUser> GetList(string queryString);
+
+        /// <summary>
         /// 保存用户信息
         /// </summary>
         /// <param name="user"></param>
@@ -48,5 +55,12 @@ namespace AtomOA.IBLL
         /// <param name="id"></param>
         /// <returns></returns>
         SystemUser GetModelById(int id);
+
+        /// <summary>
+        /// 检测用户能否登录
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        bool CheckLogin(SystemUser model);
     }
 }

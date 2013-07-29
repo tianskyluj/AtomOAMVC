@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <meta charset="utf-8">
-    <title runat="server" id="title"></title>
+    <title runat="server" id="title"><%:ViewData["CompanyName"]%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="">

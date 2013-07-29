@@ -29,6 +29,11 @@ namespace AtomOA.BLL
             return systemUserDao.GetAllList(); 
         }
 
+        public IList<SystemUser> GetList(string queryString)
+        {
+            return systemUserDao.GetList(queryString);
+        }
+
         public bool Update(SystemUser model)
         {
             return systemUserDao.Update(model);
@@ -52,6 +57,20 @@ namespace AtomOA.BLL
         public SystemUser GetModelById(int id)
         {
             return systemUserDao.GetModelById(id);
+        }
+
+        public bool CheckLogin(SystemUser model)
+        {
+            IList<SystemUser> userList = systemUserDao.GetList(" username='"+model.UserName.ToString()+"' and passWord='"+ AtomOA.Common.DEncrypt.DEncrypt.Encrypt(model.PassWord.ToString())+"'");
+            if (userList.Count > 0)
+            {
+                AtomOA.Common.DataSession.SetUserSession(userList[0]);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         #endregion

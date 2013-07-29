@@ -45,6 +45,10 @@
     <Compile Include="SystemUserServiceImpl.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AtomOA.Common\AtomOA.Common.csproj">
+      <Project>{DC47E8C0-78B3-4224-A567-FCB7ED6AFDF2}</Project>
+      <Name>AtomOA.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AtomOA.IBLL\AtomOA.IBLL.csproj">
       <Project>{FD4303BF-4289-4ABE-8378-EED21B6C81B0}</Project>
       <Name>AtomOA.IBLL</Name>
