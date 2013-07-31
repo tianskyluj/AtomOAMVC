@@ -24,6 +24,7 @@
     <script src="../../assets/js/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="../../assets/js/jquery-chosen/chosen/chosen.jquery.min.js"></script>
     <script src="../../assets/js/jquery-uniform/jquery.uniform.min.js"></script>
+    <script src="../../assets/js/knockout-2.3.0.js"></script>
     <script src="../../assets/js/bootstrap-multiselect.js" type="text/javascript"></script>
 	<script src="../../assets/js/prettify.js" type="text/javascript"></script>
     <script src="../../assets/js/inc.js"></script>

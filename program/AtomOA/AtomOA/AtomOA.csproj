@@ -136,6 +136,7 @@
     <Compile Include="Attribute\LoginAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SystemController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -298,9 +299,12 @@
     <Content Include="Configs\HibernateDaos.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Configs\Services.xml" />
+    <Content Include="Configs\Services.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Configs\Webs.xml" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\System\Index.js" />
     <Content Include="Upload\Avatar\1_avatar.txt" />
     <Content Include="Upload\Avatar\DefaultAvatar.jpg" />
     <Content Include="Views\Home\Index.aspx" />
@@ -312,6 +316,7 @@
     <Content Include="Views\Shared\JsIncludeControl.ascx" />
     <Content Include="Views\Shared\MessageControl.ascx" />
     <Content Include="Views\Shared\SidebarControl.ascx" />
+    <Content Include="Views\System\Index.aspx" />
     <Content Include="Views\User\ShowAllUsers.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
