@@ -98,7 +98,7 @@
                                         <ul class="dropdown-menu">
             <li><a href="javascript:redirect('System/Profile.aspx')"><i class="icon-user"></i> 个人资料</a></li>
             <li runat="server" id="systemSetting"><a href="javascript:redirect('System/Index.aspx')"><i class="icon-cogs"></i> 系统设置</a></li>
-            <li> <a  id="loginOut" ><i class="icon-off"></i> 登出</a></li>
+            <li> <a  id="loginOut" href="/Home/LoginOut"><i class="icon-off"></i> 登出</a></li>
             <li class="divider"></li>
             <li><a href="#"><i class="icon-info-sign"></i> 帮助</a></li>
             </ul>

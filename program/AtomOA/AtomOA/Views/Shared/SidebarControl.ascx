@@ -4,7 +4,7 @@
         <div class="scrollable">
             <div>
                 <div class="user">
-                    <img runat="server" id="avatar" class="avatar" width="25" height="25" src="../../Upload/Avatar/DefaultAvatar.jpg" alt="Julio Marquez"/>
+                    <img  id="avatar" class="avatar" width="25" height="25" src=<%: ViewData["Avatar"] %> alt="Julio Marquez"/>
                     <span data-toggle="dropdown"><%: ViewData["name"] %></span>
                 </div>
                 <div class="navigation-sidebar">
@@ -12,12 +12,12 @@
                     <i class="switch-sidebar-full icon-chevron-right"></i>
                     <span>我的菜单</span>
                 </div>
-                </div>
+            </div>
             <section class="menu">
                 <div class="accordion" id="accordion2">
                     <div class="accordion-group active">
                         <div class="accordion-heading">
-                            <a class="accordion-toggle opened" href="../Web/index.aspx">
+                            <a class="accordion-toggle opened" href="/Home/Index">
                                 <img src="../assets/img/icons/stuttgart-icon-pack/32x32/home.png" alt="工作台"/>
                                 <span>工作台</span><span class="badge">9</span> 
                             </a>

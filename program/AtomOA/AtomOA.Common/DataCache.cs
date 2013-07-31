@@ -37,5 +37,21 @@ namespace AtomOA.Common
             System.Web.Caching.Cache objCache = HttpRuntime.Cache;
             objCache.Insert(CacheKey, objObject, null, absoluteExpiration, slidingExpiration);
         }
+
+        /// <summary>
+        /// 设置全局变量
+        /// </summary>
+        public static void SetGlobalCache(AtomOA.Model.GlobalSetting globalObj)
+        {
+            SetCache("globalSetting", globalObj);
+        }
+
+        /// <summary>
+        /// 获取全局变量
+        /// </summary>
+        public static AtomOA.Model.GlobalSetting GetGlobalCache()
+        {
+            return (AtomOA.Model.GlobalSetting)GetCache("globalSetting");
+        }
     }
 }

@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using Spring.Context.Support;
 using AtomOA.IBLL;
+using System.IO;
+using System.Text;
+using AtomOA.Attribute;
 
 namespace AtomOA.Controllers
 {
@@ -18,11 +21,25 @@ namespace AtomOA.Controllers
         /// 首页
         /// </summary>
         /// <returns></returns>
+        
+        [LoginAttribute]
         public ActionResult Index()
         {
-            ViewData["CompanyName"] = AtomOA.Common.DataSession.GetGlobalSession().CompanyName.ToString();
+            ViewData["CompanyName"] = AtomOA.Common.DataCache.GetGlobalCache().CompanyName.ToString();
             ViewData["name"] = AtomOA.Common.DataSession.GetUserSession().Name.ToString();
-            
+            string fileUrl = AtomOA.Common.inc.getApplicationPath() + "/Upload/Avatar/" + AtomOA.Common.DataSession.GetUserSession().Id.ToString() + "_avatar.txt";
+            string avatarString = "";
+            StreamReader sr;
+            if (System.IO.File.Exists(HttpContext.Server.MapPath(fileUrl)))
+            {
+                sr = System.IO.File.OpenText(HttpContext.Server.MapPath(fileUrl));
+                avatarString = sr.ReadLine();
+                sr.Close();
+                sr.Dispose();
+            }
+           
+            ViewData["avatar"] = avatarString == "" ? "../../Upload/Avatar/DefaultAvatar.jpg" : avatarString;
+
             return View();
         }
 
@@ -32,13 +49,27 @@ namespace AtomOA.Controllers
         /// <returns></returns>
         public ActionResult Login()
         {
-            var webApplicationContext =
-                           ContextRegistry.GetContext() as WebApplicationContext;
-            GlobalSettingService =
-                webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
-            AtomOA.Common.DataSession.SetGlobaSession(GlobalSettingService.GetAllList()[0]);
-            ViewData["CompanyName"] = AtomOA.Common.DataSession.GetGlobalSession().CompanyName.ToString();
+            if (AtomOA.Common.DataCache.GetGlobalCache() == null)
+            {
+                var webApplicationContext =
+                          ContextRegistry.GetContext() as WebApplicationContext;
+                GlobalSettingService =
+                    webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
+                AtomOA.Common.DataCache.SetGlobalCache(GlobalSettingService.GetAllList()[0]);
+            }
+           
+            ViewData["CompanyName"] = AtomOA.Common.DataCache.GetGlobalCache().CompanyName.ToString();
             return View();
+        }
+
+        /// <summary>
+        /// 用户登出
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult LoginOut()
+        {
+            AtomOA.Common.DataSession.destroySession();
+            return RedirectToAction("Login");
         }
 
         /// <summary>

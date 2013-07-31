@@ -19,3 +19,10 @@ K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.pdb
 K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IBLL\obj\Debug\ResolveAssemblyReference.cache
 K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.dll
 K:\项目\AtomOA\mvc\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.pdb
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.dll
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.IBLL.pdb
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.dll
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\bin\Debug\AtomOA.Model.pdb
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\ResolveAssemblyReference.cache
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.dll
+K:\项目\AtomOA\mvc\AtomOAMVC\program\AtomOA\AtomOA.IBLL\obj\Debug\AtomOA.IBLL.pdb

@@ -43,27 +43,6 @@ namespace AtomOA.Common
         }
 
         /// <summary>
-        /// 获取全局设置
-        /// </summary>
-        /// <returns></returns>
-        public static AtomOA.Model.GlobalSetting GetGlobalSession()
-        {
-            AtomOA.Model.GlobalSetting globalObj = new Model.GlobalSetting();
-            globalObj.CompanyName = getSessionValue("globalCompanyName");
-
-            return globalObj;
-        }
-
-        /// <summary>
-        /// 设置全局设置
-        /// </summary>
-        /// <param name="value"></param>
-        public static void SetGlobaSession(AtomOA.Model.GlobalSetting globalObj)
-        {
-            setSession("globalCompanyName", globalObj.CompanyName);
-        }
-
-        /// <summary>
         /// 获取用户信息
         /// </summary>
         /// <returns></returns>
@@ -71,8 +50,8 @@ namespace AtomOA.Common
         {
             AtomOA.Model.SystemUser userObj = new Model.SystemUser();
             userObj.Id = getSessionValue("currentUserId").ToInt();
-            userObj.UserName = getSessionValue("currentUserName");
-            userObj.Name = getSessionValue("currentName");
+            userObj.UserName = getSessionValue("currentUserName").ToStr();
+            userObj.Name = getSessionValue("currentName").ToStr();
             userObj.IfAdmin = getSessionValue("currentIfAdmin").ToInt();
 
             return userObj;
