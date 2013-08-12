@@ -62,6 +62,6 @@ namespace AtomOA.IBLL
         /// <param name="type">设置类型</param>
         /// <param name="value">值</param>
         /// <returns></returns>
-        bool UpdateGlobalSettingValue(string type,string value);
+        bool UpdateGlobalSettingValue(string node,string value);
     }
 }

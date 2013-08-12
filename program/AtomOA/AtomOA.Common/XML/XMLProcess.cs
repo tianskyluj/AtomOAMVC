@@ -2,6 +2,7 @@
 using System.Data;
 using System.IO;
 using System.Xml;
+using AtomOA.Common.Sys;
 
 namespace AtomOA.Common.XML
 {
@@ -36,7 +37,7 @@ namespace AtomOA.Common.XML
             XmlDocument xmldoc = new XmlDocument();
             try
             {
-                string filename = AppDomain.CurrentDomain.BaseDirectory.ToString() + XMLFile;
+                string filename = SysHelper.GetPath(XMLFile);
                 if (File.Exists(filename)) xmldoc.Load(filename);
             }
             catch (Exception e)

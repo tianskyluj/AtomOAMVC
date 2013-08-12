@@ -10,8 +10,8 @@
             }
             $.post(
                     '/System/UpdateGolbal',
-                    { "id": 0, "passWord": this.companyName() },
-                    function (result) { if (result == "1") { showSuccess("操作成功"); } else { showError("修改全局设置出错，请稍后再试或者练习系统管理员") } }
+                    { "id": '0', "companyName": this.companyName() },
+                    function (result) { if (result == "1") { showSuccess("操作成功"); } else { showError("修改全局设置出错，请稍后再试或者联系系统管理员") } }
             );
         };
     }
