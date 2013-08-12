@@ -296,6 +296,7 @@
     <Content Include="Configs\Controls.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Configs\GlobalSetting.xml" />
     <Content Include="Configs\HibernateDaos.xml">
       <SubType>Designer</SubType>
     </Content>

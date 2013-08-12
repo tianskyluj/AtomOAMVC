@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.IO;
 
-namespace AtomOA.Common
+namespace AtomOA.Common.Files
 {
     /// <summary>
     /// INI文件读写类。
-    /// Copyright (C) Maticsoft
     /// </summary>
     public class INIFile
     {

@@ -20,6 +20,8 @@ namespace AtomOA.BLL
             set { globalSettingDao = value; }
         }
 
+        private string globalSettingXmlUrl = "~/configs/GlobalSetting.xml";
+
         #endregion
 
         #region IUserService 成员
@@ -54,6 +56,17 @@ namespace AtomOA.BLL
             return globalSettingDao.GetModelById(id);
         }
 
+        public string GetGlobalSettingValue(string type)
+        {
+            AtomOA.Common.XML.XmlHelper helper = new Common.XML.XmlHelper(globalSettingXmlUrl);
+            return helper.GetValue("companyName").Trim();
+        }
+
+        public bool UpdateGlobalSettingValue(string node, string value)
+        {
+            AtomOA.Common.XML.XMLProcess processHelper = new Common.XML.XMLProcess(globalSettingXmlUrl);
+            return processHelper.Update(node, value);
+        }
         #endregion
     }
 }

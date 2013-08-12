@@ -25,10 +25,16 @@ namespace AtomOA.Controllers
         [LoginAttribute]
         public ActionResult Index()
         {
-            ViewData["CompanyName"] = AtomOA.Common.DataCache.GetGlobalCache().CompanyName.ToString();
+            var webApplicationContext =
+                          ContextRegistry.GetContext() as WebApplicationContext;
+            GlobalSettingService =
+                webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
+
+            ViewData["CompanyName"] = GlobalSettingService.GetGlobalSettingValue("companyName");
             ViewData["name"] = AtomOA.Common.DataSession.GetUserSession().Name.ToString();
             string fileUrl = AtomOA.Common.inc.getApplicationPath() + "/Upload/Avatar/" + AtomOA.Common.DataSession.GetUserSession().Id.ToString() + "_avatar.txt";
             string avatarString = "";
+
             StreamReader sr;
             if (System.IO.File.Exists(HttpContext.Server.MapPath(fileUrl)))
             {
@@ -57,8 +63,8 @@ namespace AtomOA.Controllers
                     webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
                 AtomOA.Common.DataCache.SetGlobalCache(GlobalSettingService.GetAllList()[0]);
             }
-           
-            ViewData["CompanyName"] = AtomOA.Common.DataCache.GetGlobalCache().CompanyName.ToString();
+
+            ViewData["CompanyName"] = GlobalSettingService.GetGlobalSettingValue("companyName");
             return View();
         }
 

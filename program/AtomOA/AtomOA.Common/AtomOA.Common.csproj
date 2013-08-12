@@ -68,8 +68,10 @@
     <Compile Include="DEncrypt\DESEncrypt.cs" />
     <Compile Include="DEncrypt\HashEncode.cs" />
     <Compile Include="DEncrypt\RSACryption.cs" />
+    <Compile Include="Files\DirFile.cs" />
+    <Compile Include="Files\FileOperate.cs" />
+    <Compile Include="Files\INIFile.cs" />
     <Compile Include="inc.cs" />
-    <Compile Include="INIFile.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="MailSender.cs" />
     <Compile Include="MessageBox.cs" />
@@ -78,8 +80,11 @@
     <Compile Include="HttpProc.cs" />
     <Compile Include="Rmb.cs" />
     <Compile Include="StringPlus.cs" />
+    <Compile Include="System\SysHelper.cs" />
     <Compile Include="TimeParser.cs" />
     <Compile Include="UrlOper.cs" />
+    <Compile Include="XML\XmlHelper.cs" />
+    <Compile Include="XML\XMLProcess.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AtomOA.Model\AtomOA.Model.csproj">
@@ -87,6 +92,7 @@
       <Name>AtomOA.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

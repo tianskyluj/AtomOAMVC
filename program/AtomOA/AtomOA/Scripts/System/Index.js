@@ -1,6 +1,6 @@
 ﻿$(function () {
     function globalViewModel() {
-        this.companyName = ko.observable();
+        this.companyName = ko.observable($('#companyName_edit').val());
 
         // 点击更改按钮
         this.change = function () {

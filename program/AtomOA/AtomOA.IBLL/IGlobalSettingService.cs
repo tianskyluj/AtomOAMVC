@@ -48,5 +48,20 @@ namespace AtomOA.IBLL
         /// <param name="id"></param>
         /// <returns></returns>
         GlobalSetting GetModelById(int id);
+
+        /// <summary>
+        /// 获取全局设置的值
+        /// </summary>
+        /// <param name="Type">设置类型</param>
+        /// <returns>设置的值</returns>
+        string GetGlobalSettingValue(string type);
+
+        /// <summary>
+        /// 更新全局设置的值
+        /// </summary>
+        /// <param name="type">设置类型</param>
+        /// <param name="value">值</param>
+        /// <returns></returns>
+        bool UpdateGlobalSettingValue(string type,string value);
     }
 }
