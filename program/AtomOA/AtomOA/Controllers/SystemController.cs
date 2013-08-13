@@ -35,7 +35,7 @@ namespace AtomOA.Controllers
             GlobalSettingService =
                 webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
 
-            return Content(GlobalSettingService.UpdateGlobalSettingValue("companyName", globalModel.CompanyName) ? "1" : "0");
+            return Content(GlobalSettingService.UpdateGlobalSettingValue("globalSetting/companyName", globalModel.CompanyName) ? "1" : "0");
         }
 
     }

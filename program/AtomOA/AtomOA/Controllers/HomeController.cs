@@ -29,23 +29,18 @@ namespace AtomOA.Controllers
                           ContextRegistry.GetContext() as WebApplicationContext;
             GlobalSettingService =
                 webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
+            SystemUserService =
+                webApplicationContext.GetObject("SystemUserService") as ISystemUserService;//从spring配置中获取Userservice
 
             ViewData["CompanyName"] = GlobalSettingService.GetGlobalSettingValue("companyName");
             ViewData["name"] = AtomOA.Common.DataSession.GetUserSession().Name.ToString();
-            string fileUrl = AtomOA.Common.inc.getApplicationPath() + "/Upload/Avatar/" + AtomOA.Common.DataSession.GetUserSession().Id.ToString() + "_avatar.txt";
-            string avatarString = "";
+            ViewData["userId"] = AtomOA.Common.DataSession.GetUserSession().Id.ToString();
 
-            StreamReader sr;
-            if (System.IO.File.Exists(HttpContext.Server.MapPath(fileUrl)))
-            {
-                sr = System.IO.File.OpenText(HttpContext.Server.MapPath(fileUrl));
-                avatarString = sr.ReadLine();
-                sr.Close();
-                sr.Dispose();
-            }
-           
+            string avatarString = SystemUserService.GetUserAvatar();
             ViewData["avatar"] = avatarString == "" ? "../../Upload/Avatar/DefaultAvatar.jpg" : avatarString;
 
+            ViewData["visible"] = (AtomOA.Common.DataSession.GetUserSession().IfAdmin == 1);
+            
             return View();
         }
 
@@ -55,14 +50,10 @@ namespace AtomOA.Controllers
         /// <returns></returns>
         public ActionResult Login()
         {
-            if (AtomOA.Common.DataCache.GetGlobalCache() == null)
-            {
-                var webApplicationContext =
-                          ContextRegistry.GetContext() as WebApplicationContext;
-                GlobalSettingService =
-                    webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
-                AtomOA.Common.DataCache.SetGlobalCache(GlobalSettingService.GetAllList()[0]);
-            }
+            var webApplicationContext =
+                        ContextRegistry.GetContext() as WebApplicationContext;
+            GlobalSettingService =
+                webApplicationContext.GetObject("GlobalSettingService") as IGlobalSettingService;//从spring配置中获取Userservice
 
             ViewData["CompanyName"] = GlobalSettingService.GetGlobalSettingValue("companyName");
             return View();

@@ -16,6 +16,6 @@
         };
     }
 
-    // 注册用户模型
+    // 注册模型
     ko.applyBindings(new globalViewModel());
 });

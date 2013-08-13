@@ -5,6 +5,8 @@ using System.Text;
 using AtomOA.IBLL;
 using AtomOA.IDao;
 using AtomOA.Model;
+using System.IO;
+using AtomOA.Common.Sys;
 
 namespace AtomOA.BLL
 {
@@ -71,6 +73,40 @@ namespace AtomOA.BLL
             {
                 return false;
             }
+        }
+
+        public string GetUserAvatar()
+        {
+            string fileUrl = AtomOA.Common.inc.getApplicationPath() + "/Upload/Avatar/" + AtomOA.Common.DataSession.GetUserSession().Id.ToString() + "_avatar.txt";
+            string avatarString = "";
+
+            StreamReader sr;
+            if (System.IO.File.Exists(SysHelper.GetPath(fileUrl)))
+            {
+                sr = System.IO.File.OpenText(SysHelper.GetPath(fileUrl));
+                avatarString = sr.ReadLine();
+                sr.Close();
+                sr.Dispose();
+            }
+
+            return avatarString;
+        }
+
+        public string GetUserAvatar(string userId)
+        {
+            string fileUrl = AtomOA.Common.inc.getApplicationPath() + "/Upload/Avatar/" + userId.Trim() + "_avatar.txt";
+            string avatarString = "";
+
+            StreamReader sr;
+            if (System.IO.File.Exists(SysHelper.GetPath(fileUrl)))
+            {
+                sr = System.IO.File.OpenText(SysHelper.GetPath(fileUrl));
+                avatarString = sr.ReadLine();
+                sr.Close();
+                sr.Dispose();
+            }
+
+            return avatarString;
         }
 
         #endregion

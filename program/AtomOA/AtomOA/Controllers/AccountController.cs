@@ -8,6 +8,9 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using AtomOA.Models;
+using AtomOA.IBLL;
+using AtomOA.Attribute;
+using Spring.Context.Support;
 
 namespace AtomOA.Controllers
 {
@@ -16,138 +19,40 @@ namespace AtomOA.Controllers
     public class AccountController : Controller
     {
 
-        public IFormsAuthenticationService FormsService { get; set; }
-        public IMembershipService MembershipService { get; set; }
+        public ISystemUserService SystemUserService { get; set; }
 
-        protected override void Initialize(RequestContext requestContext)
+        [LoginAttribute]
+        public ActionResult Index()
         {
-            if (FormsService == null) { FormsService = new FormsAuthenticationService(); }
-            if (MembershipService == null) { MembershipService = new AccountMembershipService(); }
+            var webApplicationContext =
+                          ContextRegistry.GetContext() as WebApplicationContext;
+            SystemUserService =
+                webApplicationContext.GetObject("SystemUserService") as ISystemUserService;
 
-            base.Initialize(requestContext);
-        }
-
-        // **************************************
-        // URL: /Account/LogOn
-        // **************************************
-
-        public ActionResult LogOn()
-        {
             return View();
         }
 
+        /// <summary>
+        /// 修改个人资料
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
-        public ActionResult LogOn(LogOnModel model, string returnUrl)
+        public ActionResult UpdateProfile(AtomOA.Model.SystemUser userModel)
         {
-            if (ModelState.IsValid)
-            {
-                if (MembershipService.ValidateUser(model.UserName, model.Password))
-                {
-                    FormsService.SignIn(model.UserName, model.RememberMe);
-                    if (!String.IsNullOrEmpty(returnUrl))
-                    {
-                        return Redirect(returnUrl);
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "提供的用户名或密码不正确。");
-                }
-            }
+            var webApplicationContext =
+                          ContextRegistry.GetContext() as WebApplicationContext;
+            SystemUserService =
+                webApplicationContext.GetObject("SystemUserService") as ISystemUserService;//从spring配置中获取Userservice
 
-            // 如果我们进行到这一步时某个地方出错，则重新显示表单
-            return View(model);
+            AtomOA.Model.SystemUser initModel = SystemUserService.GetModelById(userModel.Id);
+
+            initModel.Phone = userModel.Phone;
+            initModel.Email = userModel.Email;
+            initModel.QQ = userModel.QQ;
+
+            bool echo = SystemUserService.Update(initModel);
+
+            return Content(echo ? "1" : "0");
         }
-
-        // **************************************
-        // URL: /Account/LogOff
-        // **************************************
-
-        public ActionResult LogOff()
-        {
-            FormsService.SignOut();
-
-            return RedirectToAction("Index", "Home");
-        }
-
-        // **************************************
-        // URL: /Account/Register
-        // **************************************
-
-        public ActionResult Register()
-        {
-            ViewData["PasswordLength"] = MembershipService.MinPasswordLength;
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Register(RegisterModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                // 尝试注册用户
-                MembershipCreateStatus createStatus = MembershipService.CreateUser(model.UserName, model.Password, model.Email);
-
-                if (createStatus == MembershipCreateStatus.Success)
-                {
-                    FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ModelState.AddModelError("", AccountValidation.ErrorCodeToString(createStatus));
-                }
-            }
-
-            // 如果我们进行到这一步时某个地方出错，则重新显示表单
-            ViewData["PasswordLength"] = MembershipService.MinPasswordLength;
-            return View(model);
-        }
-
-        // **************************************
-        // URL: /Account/ChangePassword
-        // **************************************
-
-        [Authorize]
-        public ActionResult ChangePassword()
-        {
-            ViewData["PasswordLength"] = MembershipService.MinPasswordLength;
-            return View();
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult ChangePassword(ChangePasswordModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                if (MembershipService.ChangePassword(User.Identity.Name, model.OldPassword, model.NewPassword))
-                {
-                    return RedirectToAction("ChangePasswordSuccess");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "当前密码不正确或新密码无效。");
-                }
-            }
-
-            // 如果我们进行到这一步时某个地方出错，则重新显示表单
-            ViewData["PasswordLength"] = MembershipService.MinPasswordLength;
-            return View(model);
-        }
-
-        // **************************************
-        // URL: /Account/ChangePasswordSuccess
-        // **************************************
-
-        public ActionResult ChangePasswordSuccess()
-        {
-            return View();
-        }
-
     }
 }

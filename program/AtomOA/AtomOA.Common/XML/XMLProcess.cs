@@ -359,7 +359,7 @@ namespace AtomOA.Common.XML
                 XmlDocument doc = XMLLoad();
                 XmlNode xn = doc.SelectSingleNode(node);
                 xn.InnerText = value;
-                doc.Save(AppDomain.CurrentDomain.BaseDirectory.ToString() + XMLPath);
+                doc.Save(SysHelper.GetPath(XMLPath));
                 return true;
             }
             catch { return false; }

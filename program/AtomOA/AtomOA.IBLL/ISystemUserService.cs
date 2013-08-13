@@ -62,5 +62,17 @@ namespace AtomOA.IBLL
         /// <param name="id"></param>
         /// <returns></returns>
         bool CheckLogin(SystemUser model);
+
+        /// <summary>
+        /// 获取当前用户头像
+        /// </summary>
+        /// <returns></returns>
+        string GetUserAvatar();
+
+        /// <summary>
+        /// 获取指定用户头像
+        /// </summary>
+        /// <returns></returns>
+        string GetUserAvatar(string userId);
     }
 }
